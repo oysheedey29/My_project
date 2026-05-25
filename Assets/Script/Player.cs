@@ -15,10 +15,10 @@ public class Player : MonoBehaviour
     {
         movement = 0f;
 
-        if (Keyboard.current.aKey.isPressed)
+        if (Keyboard.current.leftArrowKey.isPressed)
             movement = -1f;
 
-        if (Keyboard.current.dKey.isPressed)
+        if (Keyboard.current.rightArrowKey.isPressed)
             movement = 1f;
 
         rb.linearVelocity = new Vector2(movement * speed, rb.linearVelocity.y);
